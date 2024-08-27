@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="/img/Candado.png">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/img/Candado.png" alt="Candado Encriptador" >
+    </header>
+    <main>
+        <section>
+            <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h5 class="informacion">Solo letras minúsculas, sin acentos, espacios y sin caracteres especiales</h5>
+            </div>
+            <div class="botones">
+                <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div class="contenedorParrafo">
+                <h3>Ningun mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que deseas encriptar o <br> desencriptar</p>
+            </div>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+       <p class="copyright">&copy; copyright 2024- Encriptador de texto- Desarrollado por Kevin Aranda  </p>
+    </footer>
+<script src="/app.js"></script>
+</body>
+</html>
